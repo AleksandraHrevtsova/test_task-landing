@@ -1,0 +1,241 @@
+.footer {
+  height: 464px;
+  margin: 0 auto;
+}
+
+.footer_lineTop {
+  height: 3px;
+  border: none;
+  background-color: #cccccc;
+  margin: 60px 0 40px;
+}
+
+.footer__lineBottom {
+  width: 948px;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.footer__nav_list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer__nav_list li:not(:last-child) {
+  padding-right: 54px;
+}
+
+// .footer__nav_list:nth-last-of-type(1) {
+//   padding-right: 0;
+// }
+
+.footer__nav_list a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer_box {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+
+}
+
+.footer_box li {
+  width: 0;
+  height: 0;
+  border-bottom: 12px solid #eeeeee;
+  border-left: 12px solid transparent;
+  position: relative;
+  list-style: none;
+  margin: 40px;
+}
+
+.footer_box li:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -12px;
+  border-top: 12px solid #eeeeee;
+  border-right: 12px solid transparent;
+}
+
+.footer_loc,
+.footer_ip,
+.footer_email,
+.footer_rights {
+  margin: 0 auto;
+  text-align: center;
+}
+
+// .footer {
+//   font-size: 16px;
+//   font-family: "Acrom", sans-serif;
+// }
+
+// .footer-wrapper_first {
+//   background-color: #181c27;
+//   padding: 30px 15px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   transition: padding 0.3s linear;
+// }
+
+// .footer-ul-fist {
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-between;
+//   width: 290px;
+//   align-items: center;
+// }
+
+// .footer-ul-first_li {
+//   max-width: 85px;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .footer-ul-first_li span {
+//   color: #fff;
+//   font-weight: 900;
+//   font-size: 0.625rem;
+//   margin-bottom: 7px;
+// }
+
+// .footer-li_p,
+// .footer-li_p a {
+//   display: flex;
+//   flex-direction: column;
+//   color: #a2a2a2;
+//   font-size: 0.5rem;
+//   line-height: 1.222;
+//   text-decoration: none;
+// }
+
+// .footer-logo {
+//   width: 41px;
+//   height: auto;
+//   transition: width 0.3s linear;
+// }
+
+// .footer_hidden {
+//   display: none;
+// }
+
+// .footer-wrapper_button {
+//   font-weight: 900;
+//   font-size: 0.5625rem;
+//   width: 121px;
+//   height: 20px;
+//   box-sizing: border-box;
+//   background-color: transparent;
+//   text-transform: uppercase;
+//   color: #fff;
+//   border: #1a3353 1px solid;
+//   transition: background-color 0.3s linear;
+//   &:hover,
+//   &:focus {
+//     background-color: $aqua;
+//     cursor: pointer;
+//     border: none;
+//   }
+// }
+
+// .footer-wrapper_second {
+//   background-color: #202020;
+//   padding: 0 15px;
+//   height: 23px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   transition: padding 0.3s linear;
+// }
+
+// .footer-ul-second {
+//   list-style: none;
+//   display: flex;
+//   width: 300px;
+//   justify-content: space-between;
+// }
+
+// .footer_a {
+//   display: block;
+//   font-size: 0.375rem;
+//   color: #65666a;
+//   text-decoration: none;
+// }
+
+// .footer-second_ra {
+//   background-image: url(../images/footerRA.png);
+//   width: 14px;
+//   height: 8px;
+//   background-size: cover;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .footer-wrapper_first {
+//     padding: 30px 65px;
+//     transition: padding 0.3s linear;
+//   }
+
+//   .footer-logo {
+//     width: 57px;
+//   }
+
+//   .footer_hidden {
+//     display: flex;
+//   }
+
+//   .footer-ul-fist {
+//     width: 400px;
+//   }
+
+//   .footer-li_p {
+//     font-size: 0.5rem;
+//     font-weight: 900;
+//   }
+
+//   .footer-social {
+//     font-size: 0.5rem;
+//     line-height: 1.222;
+//     display: block;
+//     text-decoration: none;
+//     margin-bottom: 5px;
+//     color: #fff;
+//     font-weight: 900;
+//   }
+//   .footer-ul-first_li span {
+//     font-size: 0.5rem;
+//   }
+
+//   .footer-wrapper_button {
+//     font-size: 0.4375rem;
+//   }
+
+//   .footer-wrapper_second {
+//     padding: 0 65px;
+//     transition: padding 0.3s linear;
+//   }
+
+//   .footer_a {
+//     font-size: 0.4188rem;
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .footer-wrapper_first {
+//     padding: 30px 245px;
+//   }
+
+//   .footer-wrapper_second {
+//     padding: 0 245px;
+//   }
+
+//   .footer-ul-second {
+//     width: 350px;
+//   }
+// }

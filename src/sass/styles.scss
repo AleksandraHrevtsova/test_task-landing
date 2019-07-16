@@ -1,0 +1,51 @@
+/*
+   Import partials below
+   */
+
+$orange : #ff6b08;
+$aqua : #16ebfe;
+
+@import './normalize.scss';
+@import './fonts.scss';
+@import './section-1.scss';
+@import "./section-2.scss";
+@import './section-3.scss';
+@import './section-4.scss';
+@import './footer.scss';
+
+
+@import "./normalize";
+@import "./fonts.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+}
+
+button:hover:not(.first-section-header__button) {
+  box-shadow: 0px 5px 6px rgba(23, 236, 255, 0.26);
+  background-color: #17ecff;
+}
+
+button:focus:not(.first-section-header__button) {
+  box-shadow: 0px 5px 6px rgba(23, 236, 255, 0.26);
+  background-color: #06a4b2;
+}
