@@ -1,9 +1,28 @@
+.container {
+  max-width: 1140px;
+  width: 100%;
+  position: relative;
+}
+
+.footer,
+.footer_lineTop,
+.footer__navigation,
+.footer__elements,
+.footer__lineBottom,
+.footer__rights {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
 .footer {
   height: 464px;
   margin: 0 auto;
+  flex-flow: column;
 }
 
-.footer_lineTop {
+.footer__lineTop {
   height: 3px;
   border: none;
   background-color: #cccccc;
@@ -36,11 +55,15 @@
   text-transform: uppercase;
 }
 
+.footer__elements {
+  display: block;
+
+}
+
 .footer_box {
   display: flex;
   flex-flow: row;
   justify-content: center;
-
 }
 
 .footer_box li {
