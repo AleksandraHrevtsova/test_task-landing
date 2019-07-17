@@ -630,7 +630,48 @@ template {
 
 .s-2__wrapper_top {
   height: 501px;
-  background-color: #00b5d2;
+  background: #00b5d2;
+  background-size: cover;
+  background-position: center;
+}
+
+.s-2__wrapper_top,
+.s-2__wrapper_bottom,
+.s-2__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+}
+
+.s-2__wrapper_title,
+.s-2__wrapper_text {
+  color: aliceblue;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.s-2__wrapper_title {
+  font-family: "Lato Black", sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  padding-top: 111px;
+  padding-bottom: 53px;
+}
+
+.s-2__wrapper_text {
+  font-size: 18px;
+}
+
+.s-2__wrapper_picture {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  background-image: url(../images/section-2/follow_people_1.png);
+  background-color: inherit;
+  width: 948px;
+  height: 234px;
+  top: 56%;
+  left: 10%;
 }
 
 .s-2__wrapper_bottom {
@@ -643,24 +684,6 @@ template {
   justify-content: center;
 }
 
-.s-2__wrapper_title,
-.s-2__wrapper_text {
-  color: aliceblue;
-  text-align: center;
-  font-family: "Lato", sans-serif;
-}
-
-.s-2__wrapper_title {
-  padding-top: 111px;
-  padding-bottom: 53px;
-  font-size: 48px;
-  font-weight: 900;
-}
-
-.s-2__wrapper_text {
-  font-size: 18px;
-}
-
 .s-2__about_title,
 .s-2__about_text,
 .s-2__button {
@@ -670,10 +693,12 @@ template {
 }
 
 .s-2__about_title {
+  color: #777777;
   padding-top: 74px;
 }
 
 .s-2__about_text {
+  color: #444444;
   width: 761px;
   padding: 46px 0;
   line-height: 30px;
@@ -706,18 +731,44 @@ template {
 .container {
   max-width: 1140px;
   width: 100%;
+  height: 100%;
   position: relative;
 }
 
-.s-3__wrapper {
+.s-3 {
   height: 712px;
 }
 
+.s-3__background {
+  height: 600px;
+  background: #1b97c5;
+}
+
+.s-3__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.s-3__wrapper_title {
+  display: block;
+  margin: 0 auto;
+  padding-top: 70px;
+  font-family: "Lato Black", sans-serif;
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
 .s-3__main_picture {
+  display: block;
+  position: absolute;
+  top: -62%;
+  left: 17%;
   background: url(../images/section-3/section-3_main_picture.jpg);
   width: 741px;
   height: 485px;
-  margin: 0 auto;
+  z-index: 2;
 }
 
 .container {

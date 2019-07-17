@@ -1,22 +1,48 @@
 .container {
     max-width: 1140px;
     width: 100%;
+    height: 100%;
     position: relative;
 }
 
-.s-3__wrapper {
+.s-3 {
     height: 712px;
-    ;
+}
+
+.s-3__background {
+    height: 600px;
+    background: #1b97c5;
+}
+
+.s-3__wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.s-3__wrapper_title {
+    display: block;
+    margin: 0 auto;
+    padding-top: 70px;
+    font-family: "Lato Black", sans-serif;
+    font-size: 48px;
+    text-transform: capitalize;
 }
 
 .s-3__main_picture {
+    display: block;
+    position: absolute;
+    top: -62%;
+    left: 17%;
     background: url(../images/section-3/section-3_main_picture.jpg);
     width: 741px;
     height: 485px;
-    margin: 0 auto;
+    z-index: 2;
 }
 
 // border: 8px solid white;
+// background-color: #777777;
 
 // 3 hover
 
@@ -30,358 +56,3 @@
 
 // right
 // color: # 8591a0;
-
-
-// .section-4 {
-//     max-width: 480px;
-//     display: flex;
-//     flex-direction: column;
-//     align-content: center;
-//     padding: 30px 0;
-//     margin: 0 auto;
-
-//     &__image,
-//     &__subtitle {
-//         margin-bottom: 35px;
-//     }
-
-//     &__subtitle {
-//         margin: 0 auto;
-//         font-family: "Acrom";
-//         width: 256px;
-//         background-color: #000;
-//         color: #ffffff;
-//         font-size: 18px;
-//         font-weight: 700;
-//         line-height: 24px;
-//         text-transform: uppercase;
-//     }
-
-//     &__p {
-//         font-family: "Acrom";
-//         font-size: 14px;
-//         font-weight: 700;
-//         margin-bottom: 15px;
-//     }
-// }
-
-// .section-4__text {
-//     font-family: "Acrom";
-//     font-size: 14px;
-//     font-weight: 400;
-//     line-height: 19.5px;
-//     margin-bottom: 52px;
-// }
-
-// .section-4__text-span {
-//     background-color: #16ebfe;
-// }
-
-// .section-4__title {
-//     text-align: center;
-//     margin: 0 auto;
-//     font-family: "Acrom";
-//     background-color: #000;
-//     color: #ffffff;
-//     font-size: 18px;
-//     font-weight: 700;
-//     line-height: 24px;
-//     text-transform: uppercase;
-//     width: 292px;
-//     margin-bottom: 23px;
-// }
-
-// .section-4__text-one {
-//     margin: 0 auto;
-//     padding-left: 30px;
-//     position: relative;
-//     width: 280px;
-//     font-family: "Acrom";
-//     font-size: 14px;
-//     font-weight: 500;
-//     line-height: 19.5px;
-//     margin-bottom: 50px;
-// }
-
-// .section-4__text-one::before {
-//     content: "";
-//     width: 14px;
-//     height: 4px;
-//     background-color: #000000;
-//     position: absolute;
-//     left: 0;
-//     top: 6px;
-// }
-
-// .section-4__item {
-//     padding-left: 50px;
-//     padding-right: 30px;
-//     list-style: none;
-//     margin-bottom: 30px;
-//     position: relative;
-// }
-
-// .section-4__item::before {
-//     content: "";
-//     width: 6px;
-//     height: 6px;
-//     background-color: #000;
-//     position: absolute;
-//     left: 20px;
-//     top: 6px;
-// }
-
-
-// .section-4__item-title {
-//     font-family: "Acrom";
-//     font-size: 14px;
-//     font-weight: 700;
-//     line-height: 19.5px;
-//     text-transform: uppercase;
-//     margin-bottom: 25px;
-// }
-
-// .section-4__item-text {
-//     color: #3f4144;
-//     font-family: "Acrom";
-//     font-size: 14px;
-//     font-weight: 400;
-//     line-height: 19.5px;
-
-// }
-
-// .section-4__img {
-//     width: 100%;
-// }
-
-
-// @media (min-width: 768px) {
-//     .section-4 {
-//         max-width: 768px;
-//         display: flex;
-//         flex-direction: row;
-
-//         &__subtitle {
-//             font-family: "Acrom";
-//             font-weight: 700;
-//             width: 75px;
-//             height: 40px;
-//             margin: 0 auto;
-//             background-color: #000;
-//             color: #ffffff;
-//             font-size: 9px;
-//             line-height: 14.58px;
-//             text-transform: uppercase;
-//             margin-right: 30px;
-//         }
-
-//         &__p {
-//             font-family: "Acrom";
-//             font-weight: 700;
-//             font-size: 9px;
-//             line-height: 13.46px;
-//             margin-bottom: 10px;
-//             width: 160px;
-//         }
-
-//     }
-
-//     .section-4__text {
-//         font-family: "Acrom";
-//         font-size: 8px;
-//         font-weight: 400;
-//         line-height: 11.78px;
-//         width: 165px;
-
-//     }
-
-//     .section-4__article-two {
-//         display: flex;
-//         flex-direction: column;
-//         max-width: 274px;
-//     }
-
-//     .section-4__article-two-titles,
-//     .section-4__article-two-description {
-//         display: flex;
-
-//     }
-
-//     .section-4__title {
-//         text-align: left;
-//         font-family: "Acrom";
-//         color: #ffffff;
-//         font-size: 27px;
-//         font-weight: 700;
-//         line-height: 33.65px;
-//         text-transform: uppercase;
-//         margin-bottom: 23px;
-//         margin-right: 20px;
-//     }
-
-//     .section-4__text-one {
-//         width: 160px;
-//         position: relative;
-//         font-family: "Acrom";
-//         font-size: 8px;
-//         font-weight: 500;
-//         line-height: 13.46px;
-//         margin-bottom: 45px;
-//     }
-
-//     .section-4__text-one::before {
-//         content: "";
-//         width: 29px;
-//         height: 4px;
-//         background-color: #000000;
-//         position: absolute;
-//         left: -20px;
-//         top: 6px;
-//     }
-
-//     .section-4__item {
-//         padding-left: 100px;
-//         list-style: none;
-//         margin-bottom: 10px;
-//         position: relative;
-//     }
-
-//     .section-4__item::before {
-//         content: "";
-//         width: 8px;
-//         height: 8px;
-//         background-color: #000;
-//         position: absolute;
-//         left: 70px;
-//         top: 6px;
-//     }
-
-
-//     .section-4__item-title {
-//         font-family: "Acrom";
-//         font-size: 9px;
-//         font-weight: 700;
-//         line-height: 13.46px;
-//         text-transform: uppercase;
-//         margin-bottom: 10px;
-//     }
-
-//     .section-4__item-text {
-//         color: #3f4144;
-//         font-family: "Acrom";
-//         font-size: 9px;
-//         font-weight: 400;
-//         line-height: 13.46px;
-//     }
-// }
-
-// @media (min-width: 1200px) {
-//     .section-4 {
-//         margin: 0 auto;
-//         padding: 60px 0;
-//         max-width: 720px;
-//         display: flex;
-//         flex-direction: row;
-
-//         &__subtitle {
-//             width: 120px;
-//             height: 50px;
-//             margin: 0 auto;
-//             font-family: "Acrom";
-//             background-color: #000;
-//             color: #ffffff;
-//             font-size: 8px;
-//             font-weight: 700;
-//             line-height: 16.25px;
-//             text-transform: uppercase;
-//             margin-right: 25px;
-//         }
-
-//         &__p {
-//             font-family: "Acrom";
-//             font-size: 10px;
-//             font-weight: 700;
-//             line-height: 15px;
-//             margin-bottom: 10px;
-//             width: 180px;
-//         }
-
-//     }
-
-//     .section-4__text {
-//         font-family: "Acrom";
-//         font-size: 10px;
-//         line-height: 13.13px;
-//         width: 177px;
-//     }
-
-//     .section-4__title {
-//         display: inline-block;
-//         text-align: left;
-//         font-family: "Acrom";
-//         background-color: #000;
-//         color: #ffffff;
-//         font-size: 27px;
-//         font-weight: 700;
-//         line-height: 33.65px;
-//         text-transform: uppercase;
-//         margin-bottom: 23px;
-//         margin-left: 60px;
-//     }
-
-//     .section-4__text-one {
-//         width: 177px;
-//         position: relative;
-//         width: 177px;
-//         color: #000000;
-//         font-family: "Acrom";
-//         font-size: 10px;
-//         font-weight: 500;
-//         line-height: 15px;
-//     }
-
-//     .section-4__text-one::before {
-//         content: "";
-//         width: 35px;
-//         height: 4px;
-//         background-color: #000000;
-//         position: absolute;
-//         left: -20px;
-//         top: 6px;
-//     }
-
-//     .section-4__item {
-//         padding-left: 100px;
-//         list-style: none;
-//         margin-bottom: 15px;
-//         position: relative;
-//     }
-
-//     .section-4__item::before {
-//         content: "";
-//         width: 8px;
-//         height: 8px;
-//         background-color: #000;
-//         position: absolute;
-//         left: 70px;
-//         top: 6px;
-//     }
-
-
-//     .section-4__item-title {
-//         font-family: "Acrom";
-//         font-size: 10px;
-//         font-weight: 700;
-//         line-height: 13.46px;
-//         text-transform: uppercase;
-//         margin-bottom: 15px;
-//     }
-
-//     .section-4__item-text {
-//         color: #3f4144;
-//         font-family: "Acrom";
-//         font-size: 10px;
-//         font-weight: 400;
-//         line-height: 13.46px;
-//     }
-// }
